@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Fertilizer Recommendation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center text-primary">Fertilizer Recommendation</h2>
+    
+    <form method="post" action="/fertilizer_recommendation">
+        <div class="form-group">
+            <label for="N">Nitrogen (N):</label>
+            <input type="number" class="form-control" name="N" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="P">Phosphorus (P):</label>
+            <input type="number" class="form-control" name="P" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="K">Potassium (K):</label>
+            <input type="number" class="form-control" name="K" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="soil_type">Soil Type:</label>
+            <select class="form-control" id="soil_type" name="soil_type" required>
+                <option value="Clayey">Clayey</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Loam">Loam</option>
+                <option value="Silty">Silty</option>
+                <option value="Peaty">Peaty</option>
+                <option value="Saline">Saline</option>
+                <option value="Red">Red</option>
+                <option value="Black">Black</option>
+                <option value="Alluvial">Alluvial</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Temperature">Temperature (°C):</label>
+            <input type="number" class="form-control" name="Temperature" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Crop">Crop Type:</label>
+            <select class="form-control" name="Crop" required>
+                <option value="rice">Rice</option>
+                <option value="maize">Maize</option>
+                <option value="jute">Jute</option>
+                <option value="cotton">Cotton</option>
+                <option value="coconut">Coconut</option>
+                <option value="papaya">Papaya</option>
+                <option value="orange">Orange</option>
+                <option value="apple">Apple</option>
+                <option value="muskmelon">Muskmelon</option>
+                <option value="watermelon">Watermelon</option>
+                <option value="grapes">Grapes</option>
+                <option value="mango">Mango</option>
+                <option value="banana">Banana</option>
+                <option value="pomegranate">Pomegranate</option>
+                <option value="lentil">Lentil</option>
+                <option value="blackgram">Blackgram</option>
+                <option value="mungbean">Mungbean</option>
+                <option value="mothbeans">Mothbeans</option>
+                <option value="pigeonpeas">Pigeonpeas</option>
+                <option value="kidneybeans">Kidneybeans</option>
+                <option value="chickpea">Chickpea</option>
+                <option value="coffee">Coffee</option>
+                <option value="groundnut">Groundnut</option>
+                <option value="wheat">Wheat</option>
+                <option value="onion">Onion</option>
+                <option value="barley">Barley</option>
+                <option value="clover">Clover</option>
+                <option value="oats">Oats</option>
+            </select>
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+
+    {% if fertilizer_error %}
+        <div class="mt-4 alert alert-danger">
+            <strong>Error:</strong> {{ fertilizer_error }}
+        </div>
+    {% endif %}
+
+    {% if fertilizer_name %}
+        <div class="mt-4 alert alert-success">
+            <h4>{{ fertilizer_name }}</h4>
+            <ul>
+                <li><strong>Nutrient Content:</strong> {{ fertilizer_details.nutrient_content }}</li>
+                <li><strong>Application Rate:</strong> {{ fertilizer_details.application_rate }}</li>
+                <li><strong>Benefits:</strong> {{ fertilizer_details.benefits }}</li>
+                <li><strong>Suitable Crops:</strong> {{ fertilizer_details.suitable_crops | join(', ') }}</li>
+                <li><strong>Usage Tips:</strong> {{ fertilizer_details.usage_tips }}</li>
+            </ul>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

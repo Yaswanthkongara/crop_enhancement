@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Recommendation Results</h1>
+        {% if crop_error %}
+            <div class="alert alert-danger">{{ crop_error }}</div>
+        {% else %}
+            <div class="alert alert-success">
+                Recommended Crop: <strong>{{ recommended_crop }}</strong>
+            </div>
+        {% endif %}
+
+        {% if fertilizer_error %}
+            <div class="alert alert-danger">{{ fertilizer_error }}</div>
+        {% else %}
+            <div class="alert alert-success">
+                Recommended Fertilizer: <strong>{{ fertilizer_name }}</strong><br>
+                Description: {{ fertilizer_description }}
+            </div>
+        {% endif %}
+        
+        <a href="/" class="btn btn-primary mt-4">Go Back</a>
+    </div>
+</body>
+</html>

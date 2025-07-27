@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="home-content">
+
+    <h2>Welcome to the Agricultural Recommendation System</h2>
+    <p id="base">This system helps you choose the right crops and fertilizers based on soil conditions, weather, and more.</p>
+    <div class="crop-gallery">
+
+        
+        <!-- <ul class="crop-list">
+            <li class="crop-item" data-symbol="🌾">Rice</li>
+            <li class="crop-item" data-symbol="🌽">Maize</li>
+            <li class="crop-item" data-symbol="🎋">Jute</li>
+            <li class="crop-item" data-symbol="👕">Cotton</li>
+            <li class="crop-item" data-symbol="🥥">Coconut</li>
+            <li class="crop-item" data-symbol="🍈">Papaya</li>
+            <li class="crop-item" data-symbol="🍊">Orange</li>
+            <li class="crop-item" data-symbol="🍎">Apple</li>
+            <li class="crop-item" data-symbol="🍈">Muskmelon</li>
+            <li class="crop-item" data-symbol="🍉">Watermelon</li>
+            <li class="crop-item" data-symbol="🍇">Grapes</li>
+            <li class="crop-item" data-symbol="🥭">Mango</li>
+            <li class="crop-item" data-symbol="🍌">Banana</li>
+            <li class="crop-item" data-symbol="🍎">Pomegranate</li>
+            <li class="crop-item" data-symbol="🥣">Lentil</li>
+            <li class="crop-item" data-symbol="🌱">Blackgram</li>
+            <li class="crop-item" data-symbol="🌿">Mungbean</li>
+            <li class="crop-item" data-symbol="🌾">Mothbeans</li>
+            <li class="crop-item" data-symbol="🌱">Pigeonpeas</li>
+            <li class="crop-item" data-symbol="🫘">Kidneybeans</li>
+            <li class="crop-item" data-symbol="🍲">Chickpea</li>
+            <li class="crop-item" data-symbol="☕">Coffee</li>
+            <li class="crop-item" data-symbol="🥜">Groundnut</li>
+            <li class="crop-item" data-symbol="🌾">Wheat</li>
+            <li class="crop-item" data-symbol="🧅">Onion</li>
+            <li class="crop-item" data-symbol="🌾">Barley</li>
+            <li class="crop-item" data-symbol="🍀">Clover</li>
+            <li class="crop-item" data-symbol="🌾">Oats</li>
+          </ul> Rice -->
+        
+        <div class="crop-item">
+            <img src="/static/image/rice.jpg" alt="Rice">
+            <p><strong>Rice</strong>: <b>Botanical Name:</b> *Oryza sativa*
+            <br><b>Growing Conditions:</b> Needs warm, tropical/subtropical climates with flooded fields.
+            <br><b>Nutritional Profile:</b> High in carbs, moderate protein, rich in B vitamins (especially in brown rice).</p>
+        </div>
+
+        <!-- Maize -->
+        <div class="crop-item">
+            <img src="/static/image/maize.jpg" alt="Maize">
+            <p><strong>Maize</strong>: <b>Botanical Name:</b> *Zea mays*
+            <br><b>Growing Conditions:</b> Moderate temperatures and full sunlight; requires good drainage.
+            <br><b>Nutritional Profile:</b> High in carbohydrates, contains some protein, rich in vitamin B6 and antioxidants.</p>
+        </div>
+
+        <!-- Jute -->
+        <div class="crop-item">
+            <img src="/static/image/jute.jpg" alt="Jute">
+            <p><strong>Jute</strong>: <b>Botanical Name:</b> *Corchorus olitorius*
+            <br><b>Growing Conditions:</b> Warm and humid climates, thrives in river valleys.
+            <br><b>Uses:</b> Primarily used for making textiles and sacks; environmentally friendly fiber.</p>
+        </div>
+
+        <div class="crop-item">
+            <img src="/static/image/groundnut.jpg" alt="Groundnut">
+            <p><strong>Groundnut</strong>: <b>Botanical Name:</b> *Arachis hypogaea*
+            <br><b>Growing Conditions:</b> Prefers warm, sunny environments with well-drained soil.
+            <br><b>Nutritional Profile:</b> High in protein, healthy fats, and vitamin E.</p>
+        </div>
+
+        <!-- Cotton -->
+        <div class="crop-item">
+            <img src="\static\image\cotton.jpg" alt="Cotton">
+            <p><strong>Cotton</strong>: <b>Botanical Name:</b> *Gossypium spp.*
+            <br><b>Growing Conditions:</b> Requires warm, sunny climates with moderate rainfall.
+            <br><b>Uses:</b> Fiber for textiles; cottonseed oil and animal feed also derived from seeds.</p>
+        </div>
+
+        <!-- Coconut -->
+        <div class="crop-item">
+            <img src="/static/image/coconut.jpg" alt="Coconut">
+            <p><strong>Coconut</strong>: <b>Botanical Name:</b> *Cocos nucifera*
+            <br><b>Growing Conditions:</b> Grows well in tropical, coastal regions with sandy soils.
+            <br><b>Uses:</b> Fruit, oil, milk, and coir for a wide range of culinary and industrial products.</p>
+        </div>
+
+        <!-- Papaya -->
+        <div class="crop-item">
+            <img src="/static/image/papaya.jpg" alt="Papaya">
+            <p><strong>Papaya</strong>: <b>Botanical Name:</b> *Carica papaya*
+            <br><b>Growing Conditions:</b> Requires warm, frost-free climates with well-drained soil.
+            <br><b>Nutritional Profile:</b> High in vitamin C and papain, aiding digestion.</p>
+        </div>
+
+        <!-- Orange -->
+        <div class="crop-item">
+            <img src="/static/image/orange.jpg" alt="Orange">
+            <p><strong>Orange</strong>: <b>Botanical Name:</b> *Citrus sinensis*
+            <br><b>Growing Conditions:</b> Thrives in subtropical climates with well-drained soils.
+            <br><b>Nutritional Profile:</b> High in vitamin C, fiber, and antioxidants.</p>
+        </div>
+
+        <!-- Apple -->
+        <div class="crop-item">
+            <img src="/static/image/apple.jpg" alt="Apple">
+            <p><strong>Apple</strong>: <b>Botanical Name:</b> *Malus domestica*
+            <br><b>Growing Conditions:</b> Prefers temperate climates with cool winters.
+            <br><b>Nutritional Profile:</b> Rich in fiber, vitamin C, and various antioxidants.</p>
+        </div>
+
+        <!-- Muskmelon -->
+        <div class="crop-item">
+            <img src="/static/image/muskmelon.jpg" alt="Muskmelon">
+            <p><strong>Muskmelon</strong>: <b>Botanical Name:</b> *Cucumis melo*
+            <br><b>Growing Conditions:</b> Requires warm temperatures and well-drained soil.
+            <br><b>Nutritional Profile:</b> High in vitamins A and C, hydrating with natural sugars.</p>
+        </div>
+
+        <!-- Watermelon -->
+        <div class="crop-item">
+            <img src="/static/image/watermelon.jpg" alt="Watermelon">
+            <p><strong>Watermelon</strong>: <b>Botanical Name:</b> *Citrullus lanatus*
+            <br><b>Growing Conditions:</b> Warm climate, well-drained sandy or loamy soil.
+            <br><b>Nutritional Profile:</b> Hydrating, high in vitamins A and C, and antioxidants like lycopene.</p>
+        </div>
+
+        <!-- Grapes -->
+        <div class="crop-item">
+            <img src="/static/image/grapes.jpg" alt="Grapes">
+            <p><strong>Grapes</strong>: <b>Botanical Name:</b> *Vitis vinifera*
+            <br><b>Growing Conditions:</b> Grows in warm climates with well-drained soil.
+            <br><b>Nutritional Profile:</b> High in antioxidants, including resveratrol, and vitamin K.</p>
+        </div>
+
+        <!-- Mango -->
+        <div class="crop-item">
+            <img src="/static/image/mango.jpg" alt="Mango">
+            <p><strong>Mango</strong>: <b>Botanical Name:</b> *Mangifera indica*
+            <br><b>Growing Conditions:</b> Requires tropical climates and well-drained soil.
+            <br><b>Nutritional Profile:</b> High in vitamins A, C, and fiber.</p>
+        </div>
+
+        <!-- Banana -->
+        <div class="crop-item">
+            <img src="/static/image/banana.jpg" alt="Banana">
+            <p><strong>Banana</strong>: <b>Botanical Name:</b> *Musa spp.*
+            <br><b>Growing Conditions:</b> Warm, tropical climates with ample water.
+            <br><b>Nutritional Profile:</b> Rich in potassium, fiber, and natural sugars.</p>
+        </div>
+
+        <!-- Pomegranate -->
+        <div class="crop-item">
+            <img src="/static/image/pomegrante.jpg" alt="Pomegranate">
+            <p><strong>Pomegranate</strong>: <b>Botanical Name:</b> *Punica granatum*
+            <br><b>Growing Conditions:</b> Grows in semi-arid to tropical climates.
+            <br><b>Nutritional Profile:</b> High in vitamin C, antioxidants, and polyphenols.</p>
+        </div>
+
+        <!-- Add similar sections for the rest of the crops -->
+        
+    </div>
+</div>
+{% endblock %}

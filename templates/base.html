@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Crop Recommendation System{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+   <style>
+    /* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0faf0;
+    color: #2f4f2f;
+    line-height: 1.8;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2f6f2f, #4e854e);
+    padding: 1rem 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+header .nav-link:hover {
+    color: #a8d4a8;
+    transform: scale(1.08);
+}
+
+header .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background-color: #a8d4a8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Banner */
+.banner {
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.banner-img:hover {
+    transform: scale(1.05);
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 111, 47, 0.3);
+    border-radius: 8px;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Crop Gallery */
+.crop-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Paragraph and List Styles */
+p {
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    color: #34495e;
+}
+
+/* Crop Card Style */
+.crop-card {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.crop-card:hover {
+    background-color: #dfe6e9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Crop Specific Styling */
+#recommended-crop h4 {
+    color: #27ae60;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    b {
+        font-size: 1.1em;
+        
+    }
+
+    p, ul li {
+        font-size: 0.9em;
+    }
+}
+
+/* Additional Styling for the List and Content */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Crop Gallery Image Styling */
+/* Crop Item Card Styling */
+.crop-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Card Hover Effect */
+.crop-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Image Styling */
+.crop-item img {
+    width: 100%;
+    height: 220px; /* Consistent height for images */
+    object-fit: cover; /* Crop and fit the image for consistent display */
+    border-radius: 10px; /* Slightly rounded corners */
+    margin-bottom: 15px; /* Space between image and text */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Subtle image shadow */
+}
+
+/* Image Hover Effect */
+.crop-item img:hover {
+    transform: scale(1.03); /* Slight zoom for interactivity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Text Styling */
+.crop-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #3a3a3a; /* Softer dark color for readability */
+    margin: 12px 0; /* Balanced spacing */
+}
+
+/* Strong Text for Crop Name */
+.crop-item strong {
+    font-weight: 700;
+    color: #4CAF50; /* Green color for crop names */
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+}
+
+/* Bold Text Styling for Labels */
+.crop-item b {
+    font-weight: 600;
+    color: #555; /* Dark gray for contrast */
+}
+
+/* Subtle Card Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Styles */
+.btn-custom { 
+    background-color: #559be1;               /* Deeper pastel blue */
+    color: #ffffff;                          /* White text color for contrast */
+    font-weight: 700;                        /* Bolder font */
+    padding: 0.8rem 1.5rem;                  /* Larger padding for a more prominent look */
+    border-radius: 8px;                      /* More rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;                        /* Additional space above */
+    cursor: pointer;                         /* Pointer cursor on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for more depth */
+    border: none;  
+    align-items: center;                          /* No border for a clean look */
+}
+
+/* Hover effect with a brighter pastel blue */
+.btn-custom:hover {
+    background-color: #8fbfe4;               /* Lighter pastel blue */
+    color: #2c3e50;                          /* Darker text color for readability */
+    transform: translateY(-3px);             /* Slightly more lift effect */
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.25); /* Enhanced shadow for emphasis */
+}
+
+/* Active state */
+.btn-custom:active {
+    background-color: #5585aa;               /* Slightly darker blue for pressed effect */
+    transform: translateY(1px);              /* Press effect */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+
+/* Focus state */
+.btn-custom:focus {
+    outline: 3px solid #ffffff;              /* Thicker white outline for accessibility */
+    outline-offset: 4px;                     /* Adds space around the outline */
+}
+
+
+/* Input Field Styles */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1.5px solid #a3c6a3;  /* Light green border */
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #f1f8f1; /* Light, natural green background */
+    color: #3b5b3b;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+/* Focus and Hover Effects */
+input[type="text"]:hover, input[type="number"]:hover, select:hover {
+    border-color: #5b8f5b; /* Darker green on hover */
+    background-color: #edf7ed; /* Slightly lighter green on hover */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #2f6f2f; /* Dark green on focus */
+    box-shadow: 0 0 6px rgba(47, 111, 47, 0.3); /* Soft green glow */
+    background-color: #e6f2e6; /* Light green with a warm touch */
+    outline: none;
+    transform: scale(1.01); /* Subtle zoom on focus */
+}
+
+/* Placeholder Style */
+input[type="text"]::placeholder, input[type="number"]::placeholder {
+    color: #7a997a; /* Soft green for placeholder text */
+    font-style: italic;
+}
+
+/* Clean, Subtle Glow */
+input[type="text"]:hover, input[type="number"]:hover, select:hover {
+    box-shadow: 0 0 4px rgba(91, 143, 91, 0.2);
+}
+
+
+/* Smooth Color Transition */
+@keyframes colorPulse {
+    0%, 100% { background-color: #e6f2e6; }
+    50% { background-color: #f1f8f1; }
+}
+
+/* Animation on Focus */
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    animation: colorPulse 3s ease infinite;
+}
+
+/* Subtle Glow */
+input[type="text"]:hover, input[type="number"]:hover, select:hover {
+    box-shadow: 0 0 6px rgba(91, 143, 91, 0.3);
+}
+
+header h2 {
+    color: #a8d4a8; /* Light green title color */
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+h2{
+    text-align: center;
+}
+#base{
+    text-align: center;
+}
+/* Hover effect */
+header h2:hover {
+    color: #ffffff; /* White color when hovered */
+}
+
+/* Fertilizer Recommendation Container */
+.fertilizer-container {
+    background-color: #d8ecd8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.4s ease;
+}
+
+.fertilizer-container:hover {
+    transform: scale(1.02);
+}
+
+.form-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Container Content Styling */
+.container p, .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+    color: #34495e; /* Softer dark color for readability */
+    line-height: 1.8; /* Improved line spacing */
+    margin: 0.5em 0; /* Consistent spacing around text */
+}
+
+/* Headings in Container */
+.container h1, .container h2, .container h3 {
+    color: #27ae60; /* Lush green for headings */
+    font-weight: 700; /* Bold for emphasis */
+    text-transform: capitalize; /* Neat appearance */
+    margin-bottom: 0.75em; /* Space below headings */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+/* Paragraphs in Container */
+.container p {
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    color: #3a3a3a; /* Soft dark color */
+    line-height: 1.6; /* Balanced line height */
+    margin-bottom: 1em; /* Ample space between paragraphs */
+    text-align: justify; /* Neat alignment for body text */
+}
+
+/* Additional Spacing for H1, H2, and H3 */
+.container h1 {
+    font-size: 2rem;
+}
+
+.container h2 {
+    font-size: 1.75rem;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+}
+
+/* Subtle Underline Decoration for Headings */
+.container h1::after, .container h2::after, .container h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #27ae60;
+    margin-top: 0.3em;
+    border-radius: 4px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #2f6f2f;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+#we{
+color: #dfe6e9;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+   </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>SASYA MYTRA</h1>
+        <nav>
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('crop_recommendation') }}">Crop Recommendation</a>
+            <a class="nav-link" href="{{ url_for('fertilizer_recommendation') }}">Fertilizer Recommendation</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        {% block content %}
+        <!-- Fertilizer Recommendation Section -->
+        <div class="fertilizer-container">
+            <h2>Fertilizer Recommendation</h2>
+            <p>Enter the details below to get a recommended fertilizer type for your crop:</p>
+            <form class="form-box">
+                <div class="form-group">
+                    <label for="soil-type">Soil Type:</label>
+                    <select id="soil-type" class="form-control">
+                        <option>Loamy</option>
+                        <option>Sandy</option>
+                        <option>Clay</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="crop-type">Crop Type:</label>
+                    <input type="text" id="crop-type" class="form-control" placeholder="Enter crop type">
+                </div>
+                <button type="submit" class="btn btn-custom">Get Recommendation</button>
+            </form>
+        </div>
+
+        <!-- Crop Gallery Example -->
+        <div class="crop-gallery">
+            <div class="crop-item">
+                <img src="/static/images/crop1.jpg" alt="Crop 1">
+                <p><strong>Crop Name:</strong> Wheat</p>
+                <p><strong>Description:</strong> Wheat is a staple food used to make bread, pasta, and many other food products.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+            </div>
+            <div class="crop-item">
+                <img src="/static/images/crop2.jpg" alt="Crop 2">
+                <p><strong>Crop Name:</strong> Rice</p>
+                <p><strong>Description:</strong> Rice is a key food source for billions of people worldwide, especially in Asia.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+            </div>
+            <!-- Add more crop items as needed -->
+        </div>
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="we">&copy; 2024 Crop Recommendation System</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

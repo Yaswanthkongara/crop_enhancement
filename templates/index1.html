@@ -1,0 +1,143 @@
+
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Hate Speech Detection</title>
+        <style>
+            body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 600px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .description {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: border 0.3s;
+    }
+    
+    input[type="text"]:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+    
+    button {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #007BFF;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-1px);
+    }
+    
+    .voice-button {
+        background-color: #28a745;
+    }
+    
+    .voice-button:hover {
+        background-color: #218838;
+    }
+    
+    .result {
+        color: #333;
+        font-size: 1.2em;
+        margin-top: 20px;
+        background-color: #e7f3fe;
+        border: 1px solid #b8daff;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+        </style>
+        <script>
+            function startVoiceRecognition() {
+                const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                recognition.lang = 'en-US';
+    
+                recognition.onresult = function(event) {
+                    const transcript = event.results[0][0].transcript;
+                    document.getElementById('user_input').value = transcript; // Set the recognized text
+                    document.getElementById('input_type').value = 'voice'; // Set input type
+                    document.getElementById('text_form').submit(); // Submit the text form
+                };
+    
+                recognition.onerror = function(event) {
+                    console.error('Speech recognition error', event.error);
+                    alert('Could not recognize your voice. Please try again.');
+                };
+    
+                recognition.start();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hate Speech Detection</h1>
+            <p class="description">Enter text or speak into the microphone to check for hate speech.</p>
+            
+            <form method="POST" id="text_form" class="text-input">
+                <label for="user_input">Enter Text:</label>
+                <input type="text" name="user_input" id="user_input" required>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <form method="POST">
+                <label for="voice_input">Speak:</label>
+                <button type="button" class="voice-button" onclick="startVoiceRecognition()">Record Voice</button>
+            </form>
+            
+            {% if result %}
+                <h2 class="result">Result: {{ result }}</h2>
+            {% endif %}
+        </div>
+    </body>
+    </html>
+    

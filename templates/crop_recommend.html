@@ -1,0 +1,523 @@
+
+{% extends "base.html" %}
+
+{% block title %}Crop Recommendation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="form-container card p-4">
+        <h2 class="text-center text-primary">Crop Recommendation</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="N">Nitrogen (N):</label>
+                <input type="number" class="form-control" id="N" name="N" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="P">Phosphorus (P):</label>
+                <input type="number" class="form-control" id="P" name="P" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="K">Potassium (K):</label>
+                <input type="number" class="form-control" id="K" name="K" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" class="form-control" id="temperature" name="temperature" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" class="form-control" id="humidity" name="humidity" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="ph">Soil pH:</label>
+                <input type="number" class="form-control" id="ph" name="ph" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" class="form-control" id="rainfall" name="rainfall" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="soil">Soil Type:</label>
+                <select class="form-control" id="soil" name="soil" required>
+                    <option value="Clayey">Clayey</option>
+                    <option value="Sandy">Sandy</option>
+                    <option value="Loam">Loam</option>
+                    <option value="Silty">Silty</option>
+                    <option value="Peaty">Peaty</option>
+                    <option value="Saline">Saline</option>
+                    <option value="Red">Red</option>
+                    <option value="Black">Black</option>
+                    <option value="Alluvial">Alluvial</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="prev_crop">Previous Crop:</label>
+                <select class="form-control" id="prev_crop" name="prev_crop" required>
+                    <option value="rice">Rice</option>
+                    <option value="maize">Maize</option>
+                    <option value="jute">Jute</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="coconut">Coconut</option>
+                    <option value="papaya">Papaya</option>
+                    <option value="orange">Orange</option>
+                    <option value="apple">Apple</option>
+                    <option value="muskmelon">Muskmelon</option>
+                    <option value="watermelon">Watermelon</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="mango">Mango</option>
+                    <option value="banana">Banana</option>
+                    <option value="pomegranate">Pomegranate</option>
+                    <option value="lentil">Lentil</option>
+                    <option value="blackgram">Blackgram</option>
+                    <option value="mungbean">Mungbean</option>
+                    <option value="mothbeans">Mothbeans</option>
+                    <option value="pigeonpeas">Pigeonpeas</option>
+                    <option value="kidneybeans">Kidneybeans</option>
+                    <option value="chickpea">Chickpea</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="groundnut">Groundnut</option>
+                    <option value="wheat">Wheat</option>
+                    <option value="onion">Onion</option>
+                    <option value="barley">Barley</option>
+                    <option value="clover">Clover</option>
+                    <option value="oats">Oats</option>
+                </select>
+            </div>
+            
+        
+            <div class="form-group">
+                <label for="prev_duration">Previous Crop Duration:</label>
+                <select class="form-control" id="prev_duration" name="prev_duration" required>
+                    <option value="short">Short</option>
+                    <option value="long">Long</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="rec_duration">Recommended Duration:</label>
+                <select class="form-control" id="rec_duration" name="rec_duration" required>
+                    <option value="short">Short</option>
+                    <option value="long">Long</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="season">Season:</label>
+                <select class="form-control" id="season" name="season" required>
+                    <option value="Kharif">Kharif</option>
+                    <option value="Rabi">Rabi</option>
+                </select>
+            </div>
+        
+            <button type="submit" class = "btn-custom">Get Crop Recommendation</button>
+        
+        </form>
+
+        {% if crop_error %}
+            <div class="alert alert-danger mt-3">{{ crop_error }}</div>
+        {% endif %}
+        
+        {% if recommended_crop %}
+            <h3>Recommended Crop: {{ recommended_crop | capitalize }}</h3>
+
+            {% if recommended_crop == "rice" %}
+                <b>Nutritional Content:</b>
+                <p>High in carbohydrates and provides moderate protein.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Source of energy, easily digestible, and gluten-free.</p>
+                
+                <b>Types of Rice:</b>
+                <ul>
+                    <li>Basmati</li>
+                    <li>Jasmine</li>
+                    <li>Brown rice</li>
+                    <li>Sticky rice</li>
+                </ul>
+
+                <b>Common Foods Prepared:</b>
+                <p>Rice can be used to make dishes like biryani, fried rice, sushi, and rice pudding.</p>
+
+            {% elif recommended_crop == "maize" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in fiber, B vitamins, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports digestion, provides energy, and is high in antioxidants.</p>
+                
+                <b>Types of Maize:</b>
+                <ul>
+                    <li>Sweet corn</li>
+                    <li>Dent corn</li>
+                    <li>Flint corn</li>
+                    <li>Popcorn</li>
+                </ul>
+
+                <b>Common Foods Prepared:</b>
+                <p>Popular in dishes like cornbread, tortillas, popcorn, and polenta.</p>
+
+            {% elif recommended_crop == "jute" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in dietary fiber.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Jute leaves are often used in soups and are rich in antioxidants.</p>
+
+                <b>Common Foods Prepared:</b>
+                <p>Jute leaves are used in soups and stews in various cuisines.</p>
+
+            {% elif recommended_crop == "coconut" %}
+                <b>Nutritional Content:</b>
+                <p>High in healthy fats, particularly MCTs (Medium-Chain Triglycerides).</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports heart health and provides quick energy.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Coconut is used in cooking oils, curries, and desserts like coconut milk-based puddings.</p>
+
+            {% elif recommended_crop == "papaya" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in Vitamin C, fiber, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts immunity, improves digestion, and has anti-inflammatory properties.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Papaya can be eaten fresh, added to salads, or blended in smoothies.</p>
+
+            {% elif recommended_crop == "orange" %}
+                <b>Nutritional Content:</b>
+                <p>High in Vitamin C and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports immune health and has anti-inflammatory benefits.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Oranges are often consumed fresh, in juices, or added to desserts.</p>
+
+            {% elif recommended_crop == "apple" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in fiber and Vitamin C.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Promotes heart health, helps manage blood sugar, and is a good source of fiber.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Apples are eaten fresh, used in pies, sauces, and salads.</p>
+
+            {% elif recommended_crop == "lentil" %}
+                <b>Nutritional Content:</b>
+                <p>High in protein, iron, and dietary fiber.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports digestive health, muscle growth, and iron levels.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in soups, stews, and salads.</p>
+
+            {% elif recommended_crop == "blackgram" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in protein, fiber, and potassium.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts energy, improves digestion, and supports heart health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in dals, stews, and fermented dishes.</p>
+
+            {% elif recommended_crop == "mungbean" %}
+                <b>Nutritional Content:</b>
+                <p>High in protein, fiber, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Promotes heart health, weight management, and skin health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in soups, sprouts, and desserts.</p>
+
+            {% elif recommended_crop == "mothbeans" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in protein, calcium, and iron.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Improves bone health and provides sustained energy.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in sprouts, stews, and salads.</p>
+
+            {% elif recommended_crop == "pigeonpeas" %}
+                <b>Nutritional Content:</b>
+                <p>High in protein, fiber, and minerals.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports digestive health and bone health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in dals, stews, and rice dishes.</p>
+
+            {% elif recommended_crop == "kidneybeans" %}
+                <b>Nutritional Content:</b>
+                <p>High in protein, fiber, and iron.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports energy levels and muscle growth.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in chili, soups, and salads.</p>
+
+            {% elif recommended_crop == "chickpea" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in protein, fiber, and folate.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts digestion, supports muscle growth, and heart health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in hummus, salads, and curries.</p>
+
+            {% elif recommended_crop == "wheat" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in carbohydrates, fiber, and B vitamins.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports energy and digestive health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in bread, pasta, and cereals.</p>
+
+            {% elif recommended_crop == "onion" %}
+                <b>Nutritional Content:</b>
+                <p>High in vitamins C and B6, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports immune health and reduces inflammation.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in savory dishes, soups, and salads.</p>
+
+            {% elif recommended_crop == "barley" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in fiber, vitamins, and minerals.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports heart health and digestion.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in soups, stews, and bread.</p>
+
+
+
+                {% elif recommended_crop == "muskmelon" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in vitamins A and C, and potassium.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Hydrates the body and supports immune health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in salads, smoothies, and fruit bowls.</p>
+
+            {% elif recommended_crop == "watermelon" %}
+                <b>Nutritional Content:</b>
+                <p>High in water content, vitamins A and C, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Hydrates the body and supports skin health.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in salads, drinks, and fruit desserts.</p>
+
+            {% elif recommended_crop == "grapes" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in antioxidants, vitamin K, and potassium.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports heart health and reduces inflammation.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in wine, juices, and as fresh snacks.</p>
+
+            {% elif recommended_crop == "mango" %}
+                <b>Nutritional Content:</b>
+                <p>High in vitamin C, fiber, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts immune health and supports digestion.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in smoothies, desserts, and salads.</p>
+
+            {% elif recommended_crop == "banana" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in potassium, vitamin C, and fiber.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts energy and aids digestion.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in smoothies, snacks, and desserts.</p>
+
+            {% elif recommended_crop == "pomegranate" %}
+                <b>Nutritional Content:</b>
+                <p>High in fiber, vitamins C and K, and antioxidants.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Promotes heart health and reduces inflammation.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in salads, drinks, and desserts.</p>
+
+
+            {% elif recommended_crop == "groundnut" %}
+                <b>Nutritional Content:</b>
+                <p>High in protein, healthy fats, and fiber.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports heart health and provides energy.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in snacks, peanut butter, and oil.</p>
+
+                {% elif recommended_crop == "coffee" %}
+                <b>Nutritional Content:</b>
+                <p>Rich in antioxidants, caffeine, and essential vitamins and minerals.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Boosts energy, improves cognitive function, and provides antioxidant benefits.</p>
+                
+                <b>Common Uses:</b>
+                <p>Widely used as a beverage and in food products like cakes and ice cream.</p>
+
+            {% elif recommended_crop == "clover" %}
+                <b>Common Uses:</b>
+                <p>Used as a cover crop for soil enrichment, livestock fodder, and erosion control.</p>
+                
+                <b>Environmental Benefits:</b>
+                <p>Enhances soil fertility, reduces erosion, and supports pollinators like bees.</p>
+
+            {% elif recommended_crop == "cotton" %}
+                <b>Material Content:</b>
+                <p>Source of natural fibers primarily composed of cellulose.</p>
+                
+                <b>Industrial Uses:</b>
+                <p>Used extensively in the textile industry for clothing, bedding, and other products.</p>
+                
+                <b>Byproducts:</b>
+                <p>Byproducts include cottonseed oil, which is used in cooking, and cottonseed meal, used in animal feed.</p>
+
+
+            {% elif recommended_crop == "oats" %}
+                <b>Nutritional Content:</b>
+                <p>High in fiber, protein, and essential minerals.</p>
+                
+                <b>Health Benefits:</b>
+                <p>Supports heart health and digestion.</p>
+                
+                <b>Common Foods Prepared:</b>
+                <p>Used in oatmeal, granola, and baked goods.</p>
+
+
+            {% else %}
+                <p>Information for the recommended crop is not available.</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

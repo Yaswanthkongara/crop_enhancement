@@ -1,0 +1,1001 @@
+Temperature,pH,N,P,K,Crop,Soil,Fertilizer
+27,6.5,29,4,57,Wheat,Sandy,SSP
+30,7.0,97,16,30,Pulses,Loam,Potash
+36,7.4,13,98,84,Cotton,Clayey,Potash
+15,5.7,19,56,20,Pulses,Clayey,DAP
+18,5.7,41,14,58,Pulses,Loam,SSP
+18,6.7,76,15,69,Maize,Clayey,Urea
+22,7.0,44,88,74,Wheat,Loam,DAP
+24,7.2,51,14,88,Rice,Sandy,Complex NPK
+34,7.4,16,10,75,Rice,Loam,Complex NPK
+36,7.5,37,4,21,Rice,Sandy,Potash
+33,6.3,14,84,70,Rice,Loam,Urea
+19,6.3,36,52,65,Rice,Loam,Potash
+38,5.8,4,75,52,Pulses,Clayey,Complex NPK
+21,6.9,47,53,13,Pulses,Clayey,SSP
+39,6.8,0,93,79,Pulses,Clayey,DAP
+39,7.2,49,67,43,Wheat,Clayey,Urea
+27,5.7,37,44,85,Cotton,Loam,DAP
+16,6.5,75,90,67,Maize,Clayey,DAP
+21,6.7,44,91,93,Pulses,Loam,Potash
+22,6.0,69,2,9,Wheat,Loam,Complex NPK
+38,5.8,16,60,54,Wheat,Sandy,Urea
+29,7.2,16,66,88,Maize,Loam,DAP
+39,5.6,10,23,55,Rice,Clayey,Urea
+32,6.4,5,28,55,Wheat,Sandy,Urea
+20,5.7,23,53,56,Cotton,Sandy,Complex NPK
+28,6.4,47,18,49,Cotton,Sandy,DAP
+23,7.5,67,59,20,Cotton,Loam,Urea
+24,6.3,38,65,37,Wheat,Clayey,Urea
+35,7.2,18,68,53,Wheat,Sandy,DAP
+34,5.7,94,36,61,Wheat,Loam,DAP
+31,6.0,80,81,83,Wheat,Loam,DAP
+34,6.3,31,24,40,Cotton,Sandy,Potash
+20,6.3,42,89,67,Maize,Clayey,DAP
+30,6.8,47,76,37,Maize,Loam,Complex NPK
+30,6.2,21,34,3,Wheat,Sandy,Urea
+15,6.9,97,85,84,Cotton,Loam,Potash
+33,6.8,55,56,38,Maize,Clayey,DAP
+18,6.3,74,63,94,Cotton,Clayey,SSP
+39,6.4,31,73,33,Wheat,Clayey,Potash
+32,6.7,83,36,89,Wheat,Clayey,Potash
+34,5.6,66,41,41,Pulses,Loam,Potash
+34,7.1,19,6,22,Wheat,Clayey,Potash
+34,6.8,31,17,66,Cotton,Sandy,Urea
+29,7.0,19,31,57,Wheat,Clayey,Urea
+22,6.6,39,6,27,Rice,Clayey,Potash
+15,5.7,39,50,58,Pulses,Sandy,SSP
+16,6.3,61,16,28,Wheat,Clayey,DAP
+24,6.3,97,30,60,Wheat,Clayey,Potash
+15,6.1,44,28,99,Pulses,Sandy,Potash
+25,5.6,54,75,47,Rice,Clayey,DAP
+35,7.0,94,32,33,Pulses,Loam,Urea
+38,5.7,62,89,25,Cotton,Loam,Potash
+18,6.7,76,38,74,Cotton,Clayey,Potash
+26,6.9,16,29,72,Rice,Loam,Potash
+33,6.8,80,2,81,Wheat,Sandy,Potash
+38,7.4,6,83,89,Pulses,Loam,DAP
+17,5.7,68,76,7,Maize,Clayey,Urea
+15,7.2,45,18,51,Rice,Clayey,SSP
+15,5.6,84,64,29,Pulses,Clayey,DAP
+19,6.6,30,41,39,Pulses,Clayey,SSP
+36,6.3,76,22,41,Rice,Sandy,SSP
+20,6.5,53,17,20,Maize,Clayey,DAP
+21,6.2,33,42,33,Cotton,Sandy,Urea
+23,5.9,90,4,10,Cotton,Sandy,Urea
+35,5.5,18,4,76,Wheat,Clayey,Urea
+32,6.5,6,18,47,Wheat,Loam,DAP
+30,7.2,2,69,2,Cotton,Loam,DAP
+19,6.2,26,14,96,Maize,Loam,Complex NPK
+24,5.9,25,10,88,Rice,Clayey,DAP
+25,5.7,13,50,53,Pulses,Loam,Complex NPK
+39,5.7,63,93,69,Wheat,Sandy,SSP
+16,5.9,91,83,19,Cotton,Loam,DAP
+16,5.7,62,34,0,Pulses,Sandy,Complex NPK
+22,6.0,57,3,17,Rice,Loam,Urea
+24,5.6,37,8,87,Rice,Sandy,SSP
+18,5.6,45,90,84,Wheat,Loam,DAP
+21,7.2,21,82,58,Wheat,Loam,Potash
+38,5.8,69,68,36,Maize,Sandy,SSP
+26,6.6,49,7,12,Rice,Loam,SSP
+29,7.0,25,93,44,Cotton,Loam,Complex NPK
+33,6.4,12,35,79,Rice,Loam,DAP
+15,5.8,52,79,37,Rice,Clayey,Complex NPK
+29,5.9,70,46,24,Maize,Clayey,SSP
+18,6.4,47,45,45,Rice,Loam,Urea
+36,6.6,73,67,52,Cotton,Loam,DAP
+27,6.2,10,58,84,Maize,Clayey,DAP
+25,7.1,72,3,60,Rice,Sandy,DAP
+35,7.0,90,70,7,Wheat,Loam,Urea
+26,7.4,16,66,23,Pulses,Loam,SSP
+19,5.6,95,24,20,Rice,Sandy,Potash
+21,7.3,94,55,69,Cotton,Sandy,SSP
+19,6.3,38,59,7,Cotton,Sandy,Urea
+30,7.3,48,35,36,Wheat,Loam,Complex NPK
+35,6.9,60,3,9,Rice,Sandy,Complex NPK
+18,7.5,6,71,69,Rice,Sandy,Potash
+27,7.0,70,27,25,Rice,Clayey,Complex NPK
+19,6.2,1,66,33,Cotton,Sandy,Urea
+35,6.5,63,71,84,Maize,Loam,Potash
+23,6.3,65,10,64,Maize,Loam,Urea
+29,6.2,21,63,33,Wheat,Clayey,DAP
+30,6.0,46,5,83,Cotton,Loam,Complex NPK
+35,6.5,0,40,73,Pulses,Loam,DAP
+18,6.9,86,86,2,Wheat,Clayey,SSP
+38,6.1,36,52,16,Maize,Sandy,DAP
+30,6.5,26,43,87,Pulses,Sandy,Complex NPK
+28,5.7,20,65,61,Wheat,Loam,SSP
+36,5.8,84,6,58,Wheat,Clayey,Complex NPK
+36,5.6,34,28,25,Cotton,Sandy,Complex NPK
+31,7.4,61,5,42,Rice,Loam,Complex NPK
+32,5.5,30,74,80,Maize,Sandy,Urea
+20,5.9,27,7,17,Maize,Loam,Complex NPK
+24,6.7,73,29,40,Rice,Sandy,SSP
+18,5.7,72,82,60,Pulses,Sandy,SSP
+15,7.3,52,47,81,Pulses,Loam,Potash
+20,6.9,84,60,41,Pulses,Sandy,Complex NPK
+15,7.4,23,63,38,Rice,Loam,Urea
+32,6.5,62,66,76,Cotton,Clayey,Complex NPK
+33,6.1,48,41,70,Cotton,Sandy,SSP
+19,6.6,59,29,24,Wheat,Clayey,DAP
+17,7.4,43,96,33,Maize,Loam,Complex NPK
+31,6.5,42,49,78,Rice,Sandy,Urea
+18,6.0,13,60,69,Cotton,Sandy,SSP
+17,7.3,9,52,9,Maize,Sandy,Complex NPK
+25,6.2,27,25,37,Pulses,Clayey,Potash
+28,5.5,90,36,11,Rice,Sandy,DAP
+31,6.0,34,19,25,Maize,Sandy,SSP
+22,6.1,70,96,16,Cotton,Loam,Potash
+36,7.2,41,91,83,Pulses,Sandy,SSP
+24,6.4,37,26,61,Wheat,Sandy,DAP
+15,6.4,6,56,23,Wheat,Clayey,Potash
+25,6.2,58,56,50,Wheat,Clayey,Potash
+33,7.3,85,28,9,Cotton,Sandy,DAP
+26,7.4,3,45,42,Rice,Clayey,DAP
+38,7.5,75,87,41,Maize,Sandy,DAP
+17,6.3,11,82,26,Cotton,Sandy,SSP
+17,7.4,29,5,42,Maize,Sandy,SSP
+18,7.1,78,65,62,Cotton,Sandy,Urea
+18,6.9,83,85,11,Pulses,Sandy,Potash
+33,6.0,26,34,71,Cotton,Clayey,Potash
+29,5.9,80,1,91,Wheat,Loam,Complex NPK
+18,5.8,35,93,32,Rice,Sandy,Potash
+35,7.3,52,98,30,Maize,Sandy,Urea
+32,6.1,17,14,86,Pulses,Sandy,Urea
+33,6.4,80,30,29,Wheat,Sandy,DAP
+29,6.5,10,9,32,Pulses,Clayey,Potash
+24,7.1,60,54,66,Maize,Sandy,Urea
+16,7.2,73,27,22,Cotton,Loam,DAP
+19,5.8,99,7,47,Rice,Loam,Urea
+25,6.4,25,76,40,Wheat,Sandy,Potash
+37,7.2,26,93,24,Rice,Sandy,Potash
+26,7.1,51,36,14,Maize,Sandy,DAP
+23,5.7,79,38,2,Pulses,Loam,Potash
+26,5.8,27,92,67,Rice,Clayey,DAP
+17,6.1,4,85,33,Pulses,Clayey,Potash
+34,5.7,85,87,42,Rice,Clayey,Complex NPK
+31,6.3,53,37,36,Maize,Loam,DAP
+15,5.7,23,20,0,Pulses,Loam,Complex NPK
+37,6.6,22,13,24,Rice,Clayey,Potash
+15,6.0,92,40,50,Rice,Sandy,SSP
+21,6.7,43,50,38,Maize,Sandy,Potash
+34,5.7,6,54,55,Pulses,Clayey,SSP
+29,7.5,13,65,12,Rice,Clayey,Potash
+25,7.4,77,72,15,Wheat,Loam,DAP
+34,6.3,17,58,26,Maize,Loam,Urea
+39,6.0,40,73,23,Rice,Loam,DAP
+23,6.0,94,49,56,Maize,Clayey,SSP
+28,6.5,68,17,93,Cotton,Clayey,Potash
+39,5.6,18,49,16,Rice,Sandy,Potash
+17,6.8,2,89,82,Wheat,Loam,Potash
+18,6.3,27,87,45,Cotton,Sandy,Urea
+17,6.3,8,57,33,Maize,Sandy,Urea
+26,7.1,79,74,3,Pulses,Sandy,DAP
+28,6.9,51,90,58,Pulses,Loam,DAP
+31,7.4,87,13,71,Maize,Clayey,SSP
+23,6.2,47,31,57,Pulses,Loam,Urea
+23,7.3,63,21,20,Pulses,Loam,Complex NPK
+34,7.0,30,97,88,Wheat,Loam,DAP
+23,6.2,13,1,66,Cotton,Sandy,Complex NPK
+17,6.7,92,96,60,Rice,Sandy,DAP
+39,6.1,46,43,10,Cotton,Sandy,Complex NPK
+35,7.2,14,55,51,Maize,Clayey,Complex NPK
+18,5.7,46,70,98,Wheat,Clayey,DAP
+27,5.9,45,34,88,Maize,Clayey,Urea
+29,5.9,97,94,0,Cotton,Clayey,DAP
+15,6.3,4,46,70,Wheat,Loam,Urea
+19,7.0,10,90,13,Wheat,Sandy,Potash
+18,6.6,63,17,25,Cotton,Sandy,Potash
+28,6.5,18,12,91,Rice,Loam,Potash
+26,5.5,72,52,47,Cotton,Loam,Potash
+37,6.4,58,47,69,Wheat,Sandy,SSP
+28,5.6,73,39,23,Wheat,Sandy,SSP
+28,5.9,13,48,51,Rice,Clayey,DAP
+26,7.4,12,55,54,Rice,Clayey,Complex NPK
+39,5.9,29,25,24,Maize,Loam,SSP
+31,7.2,78,64,77,Maize,Sandy,SSP
+39,7.1,77,60,21,Wheat,Sandy,Complex NPK
+36,5.8,9,30,13,Maize,Clayey,SSP
+29,6.7,46,92,66,Rice,Clayey,Complex NPK
+31,5.7,60,87,41,Maize,Sandy,SSP
+37,7.0,76,79,1,Maize,Loam,Potash
+36,6.8,29,38,58,Wheat,Clayey,Complex NPK
+34,7.1,75,86,52,Cotton,Sandy,Potash
+16,6.5,24,48,0,Cotton,Loam,DAP
+23,7.3,59,7,57,Pulses,Sandy,Complex NPK
+15,5.6,72,37,14,Pulses,Sandy,Complex NPK
+19,6.1,15,66,7,Wheat,Sandy,Urea
+21,6.9,54,77,48,Wheat,Loam,SSP
+36,6.3,32,20,73,Cotton,Loam,Complex NPK
+28,5.8,80,46,49,Wheat,Sandy,Urea
+22,5.7,11,93,4,Rice,Sandy,Urea
+39,7.1,15,32,16,Wheat,Loam,Urea
+39,6.4,25,52,16,Maize,Sandy,Potash
+30,7.3,21,55,63,Wheat,Sandy,Urea
+24,7.0,22,19,16,Cotton,Loam,Complex NPK
+33,6.3,81,56,67,Rice,Clayey,DAP
+23,6.2,92,22,54,Pulses,Loam,SSP
+37,6.5,91,86,2,Rice,Clayey,Potash
+30,7.3,72,60,32,Rice,Clayey,Urea
+26,7.0,91,34,57,Maize,Loam,Urea
+21,5.5,92,61,70,Rice,Clayey,Potash
+30,6.9,99,54,85,Wheat,Sandy,Potash
+16,7.3,30,38,28,Cotton,Loam,Complex NPK
+37,6.9,41,85,22,Rice,Clayey,Complex NPK
+27,5.9,9,92,27,Rice,Clayey,DAP
+39,6.5,52,48,49,Wheat,Loam,Complex NPK
+39,5.8,43,34,4,Rice,Loam,Complex NPK
+18,6.2,81,61,4,Pulses,Sandy,Potash
+33,7.4,50,65,95,Rice,Clayey,Potash
+30,7.3,16,54,66,Rice,Loam,SSP
+18,6.1,64,17,89,Rice,Clayey,Potash
+25,6.2,26,52,94,Pulses,Clayey,Potash
+27,6.7,7,34,75,Pulses,Clayey,Complex NPK
+21,7.4,54,43,74,Pulses,Loam,Complex NPK
+18,5.8,82,13,66,Pulses,Sandy,Potash
+37,6.0,58,17,75,Rice,Clayey,Potash
+20,7.2,75,31,76,Wheat,Loam,SSP
+38,6.5,57,21,84,Cotton,Clayey,Urea
+26,7.3,58,98,9,Cotton,Sandy,Potash
+15,5.9,76,1,35,Rice,Clayey,DAP
+26,6.6,13,69,51,Maize,Sandy,SSP
+23,6.2,72,47,6,Cotton,Loam,Urea
+35,6.1,18,38,31,Pulses,Loam,Complex NPK
+25,6.4,17,63,27,Maize,Loam,Potash
+37,6.4,42,31,10,Wheat,Clayey,DAP
+26,6.2,44,92,48,Maize,Sandy,Complex NPK
+20,7.3,98,68,72,Wheat,Clayey,Potash
+30,7.0,75,37,89,Maize,Sandy,Urea
+23,7.0,87,7,79,Cotton,Loam,Potash
+17,6.1,70,67,26,Pulses,Clayey,Potash
+34,6.7,78,54,69,Wheat,Loam,DAP
+38,7.1,46,21,82,Wheat,Loam,SSP
+36,7.1,54,21,64,Maize,Sandy,Complex NPK
+34,6.2,50,57,36,Pulses,Sandy,Complex NPK
+29,7.0,43,90,32,Rice,Sandy,Potash
+35,7.0,65,66,37,Wheat,Clayey,DAP
+36,5.8,78,92,82,Pulses,Loam,SSP
+18,7.2,6,47,77,Rice,Clayey,Potash
+18,6.4,47,32,83,Wheat,Sandy,Complex NPK
+22,6.5,44,33,66,Pulses,Sandy,Potash
+24,6.4,9,99,40,Wheat,Sandy,Urea
+24,6.6,3,58,0,Cotton,Loam,SSP
+24,6.7,9,32,38,Pulses,Loam,Potash
+38,6.5,34,17,64,Maize,Sandy,DAP
+18,7.2,94,9,9,Maize,Loam,Complex NPK
+29,6.8,1,99,62,Rice,Loam,Urea
+33,6.3,38,44,49,Cotton,Clayey,DAP
+27,6.3,78,86,3,Rice,Clayey,Complex NPK
+18,7.1,80,5,5,Maize,Sandy,Urea
+24,6.2,94,86,81,Pulses,Sandy,Complex NPK
+25,5.9,50,9,18,Cotton,Loam,SSP
+28,5.6,13,65,45,Wheat,Clayey,Potash
+22,7.3,86,61,75,Wheat,Clayey,Complex NPK
+22,7.3,46,5,64,Pulses,Sandy,Urea
+36,5.7,99,68,38,Maize,Clayey,SSP
+16,6.2,87,7,41,Rice,Loam,Potash
+27,5.9,37,54,17,Maize,Clayey,SSP
+17,5.7,93,19,44,Pulses,Clayey,DAP
+17,7.3,90,51,18,Maize,Sandy,DAP
+39,5.6,82,38,63,Rice,Clayey,Potash
+16,7.5,86,13,6,Rice,Sandy,DAP
+20,5.7,6,11,79,Cotton,Sandy,Potash
+23,7.2,74,87,54,Cotton,Clayey,DAP
+19,6.6,43,54,60,Cotton,Sandy,DAP
+15,6.2,1,53,39,Maize,Loam,DAP
+26,6.2,73,75,0,Wheat,Sandy,Potash
+17,7.0,90,40,37,Maize,Sandy,Complex NPK
+20,6.1,48,95,36,Rice,Clayey,Complex NPK
+36,6.8,79,3,7,Cotton,Clayey,DAP
+31,6.5,17,61,45,Pulses,Sandy,Complex NPK
+23,6.5,19,2,11,Wheat,Sandy,SSP
+16,7.3,19,71,4,Maize,Sandy,DAP
+32,6.6,65,2,70,Wheat,Loam,SSP
+31,7.2,27,25,38,Pulses,Clayey,Complex NPK
+18,7.0,35,46,40,Cotton,Loam,Potash
+39,5.6,9,5,62,Cotton,Clayey,Urea
+23,7.0,13,16,70,Rice,Clayey,Potash
+35,5.9,53,8,80,Maize,Loam,Potash
+19,7.3,70,81,34,Rice,Loam,Complex NPK
+31,5.6,88,92,80,Wheat,Clayey,Potash
+18,6.2,10,78,96,Pulses,Clayey,Complex NPK
+22,5.7,43,56,28,Pulses,Loam,Urea
+18,6.5,5,6,32,Rice,Loam,Complex NPK
+33,7.1,40,77,49,Rice,Clayey,SSP
+32,6.1,15,56,8,Wheat,Loam,Complex NPK
+16,5.8,14,92,21,Cotton,Sandy,SSP
+33,6.2,85,3,50,Pulses,Clayey,Potash
+32,7.1,0,59,24,Rice,Loam,Potash
+35,5.8,35,4,16,Pulses,Sandy,SSP
+17,6.0,97,0,85,Cotton,Clayey,Potash
+20,5.6,14,75,10,Pulses,Clayey,DAP
+20,6.9,6,38,32,Cotton,Loam,Urea
+27,6.3,88,6,8,Cotton,Sandy,Complex NPK
+27,6.1,3,20,59,Maize,Loam,Urea
+36,6.9,68,70,70,Wheat,Loam,Potash
+17,6.2,95,16,90,Pulses,Sandy,Urea
+30,7.0,27,64,91,Cotton,Loam,DAP
+36,7.1,67,67,45,Pulses,Clayey,DAP
+22,5.9,34,69,89,Rice,Sandy,Complex NPK
+22,7.4,41,61,20,Wheat,Loam,Potash
+26,5.8,13,39,84,Wheat,Loam,Potash
+37,6.1,17,59,77,Rice,Loam,DAP
+32,5.9,40,80,34,Rice,Clayey,SSP
+21,6.2,74,89,4,Pulses,Clayey,Urea
+22,6.5,38,94,48,Maize,Sandy,DAP
+33,6.5,42,27,78,Pulses,Sandy,Urea
+26,7.2,67,75,24,Pulses,Clayey,Complex NPK
+34,7.3,27,64,65,Cotton,Sandy,DAP
+32,5.9,60,33,43,Pulses,Clayey,Complex NPK
+24,6.7,15,25,77,Wheat,Clayey,SSP
+29,5.7,34,52,97,Maize,Loam,SSP
+36,6.4,50,14,76,Rice,Sandy,Potash
+24,6.1,44,48,16,Wheat,Loam,Complex NPK
+33,6.1,84,34,57,Rice,Clayey,DAP
+15,6.5,52,40,5,Cotton,Sandy,Urea
+24,7.0,25,50,97,Pulses,Loam,Urea
+26,5.6,75,62,95,Cotton,Clayey,Complex NPK
+32,7.3,44,43,8,Rice,Clayey,DAP
+24,7.0,81,38,33,Pulses,Loam,Potash
+15,5.9,5,19,54,Pulses,Loam,SSP
+37,7.4,83,42,64,Cotton,Loam,SSP
+31,6.5,71,98,32,Rice,Sandy,Potash
+25,7.5,68,21,95,Maize,Sandy,DAP
+19,5.9,95,20,2,Cotton,Loam,Urea
+39,6.6,93,90,27,Wheat,Loam,Urea
+35,6.1,91,35,80,Wheat,Clayey,Urea
+18,6.1,32,27,87,Wheat,Sandy,DAP
+34,6.7,41,3,66,Rice,Loam,DAP
+23,7.3,82,89,71,Wheat,Sandy,Complex NPK
+39,7.1,29,7,45,Wheat,Sandy,Complex NPK
+29,6.9,13,4,20,Pulses,Sandy,Potash
+38,6.6,9,4,64,Pulses,Clayey,Potash
+15,7.3,54,53,7,Pulses,Loam,Urea
+34,6.5,8,9,89,Rice,Loam,DAP
+23,7.2,25,68,24,Wheat,Loam,Complex NPK
+22,7.2,33,33,65,Cotton,Clayey,Urea
+38,5.9,17,49,99,Wheat,Clayey,Complex NPK
+28,7.0,47,74,62,Pulses,Clayey,DAP
+32,5.5,16,23,94,Wheat,Loam,DAP
+39,6.1,49,57,34,Pulses,Sandy,Potash
+35,6.0,62,96,92,Wheat,Clayey,DAP
+38,6.5,71,77,98,Rice,Sandy,DAP
+15,7.0,94,21,21,Maize,Clayey,Urea
+26,5.7,80,92,87,Maize,Clayey,DAP
+19,6.5,86,23,17,Wheat,Clayey,SSP
+15,7.4,37,5,69,Cotton,Loam,Urea
+25,6.0,9,61,3,Wheat,Clayey,Potash
+29,6.9,46,2,89,Wheat,Loam,Urea
+37,6.7,12,0,21,Maize,Clayey,Urea
+35,5.5,88,9,59,Wheat,Clayey,DAP
+33,6.5,22,71,6,Wheat,Sandy,Urea
+19,6.9,56,29,61,Pulses,Clayey,Complex NPK
+37,5.6,78,21,83,Wheat,Clayey,SSP
+18,7.3,45,80,22,Pulses,Sandy,Complex NPK
+34,6.5,33,78,23,Rice,Clayey,Potash
+22,5.6,62,83,85,Cotton,Loam,SSP
+23,5.9,4,37,76,Wheat,Clayey,DAP
+28,7.4,69,90,22,Pulses,Loam,SSP
+20,6.7,76,76,60,Pulses,Clayey,DAP
+15,5.7,41,79,10,Wheat,Loam,Urea
+23,6.1,12,83,78,Maize,Clayey,DAP
+30,6.4,0,18,57,Maize,Sandy,Potash
+30,5.5,69,66,41,Wheat,Clayey,Complex NPK
+36,6.3,22,16,69,Wheat,Loam,SSP
+26,6.5,97,75,39,Maize,Clayey,Complex NPK
+19,6.0,49,99,74,Wheat,Clayey,Complex NPK
+22,6.7,65,9,61,Wheat,Clayey,Complex NPK
+28,7.0,10,73,90,Maize,Loam,Complex NPK
+25,6.0,70,30,26,Pulses,Loam,Urea
+35,6.7,16,22,83,Rice,Clayey,Potash
+29,6.8,71,20,46,Wheat,Clayey,Potash
+32,7.4,27,83,16,Maize,Clayey,DAP
+34,7.1,38,68,1,Wheat,Sandy,DAP
+18,7.2,84,79,83,Wheat,Sandy,DAP
+24,6.5,41,33,78,Pulses,Clayey,Potash
+33,5.9,82,64,9,Rice,Clayey,Potash
+36,7.5,70,15,63,Wheat,Clayey,Potash
+17,5.8,38,77,63,Rice,Clayey,DAP
+34,6.4,34,9,60,Maize,Sandy,Urea
+36,5.6,74,49,35,Maize,Loam,Complex NPK
+26,7.4,40,10,99,Cotton,Loam,Potash
+38,7.4,40,34,8,Pulses,Loam,Potash
+33,6.9,27,39,90,Maize,Clayey,SSP
+28,6.2,94,48,56,Wheat,Sandy,Potash
+38,6.0,36,44,45,Wheat,Loam,Complex NPK
+16,6.0,98,1,77,Maize,Sandy,DAP
+21,5.8,59,72,61,Cotton,Clayey,SSP
+25,6.6,89,0,89,Pulses,Clayey,Complex NPK
+36,5.8,27,11,44,Cotton,Loam,Urea
+31,6.1,56,26,52,Rice,Clayey,Complex NPK
+31,6.8,58,94,14,Pulses,Loam,Potash
+18,7.0,31,42,13,Pulses,Sandy,DAP
+32,5.5,48,19,58,Wheat,Clayey,Complex NPK
+25,6.4,3,85,6,Pulses,Loam,SSP
+24,6.8,64,1,72,Pulses,Loam,Complex NPK
+27,7.2,37,60,51,Wheat,Clayey,SSP
+28,6.5,39,82,14,Pulses,Sandy,SSP
+21,7.4,12,92,28,Cotton,Sandy,Complex NPK
+21,6.0,84,62,29,Pulses,Sandy,SSP
+22,5.5,75,11,95,Maize,Clayey,DAP
+23,6.5,76,49,94,Pulses,Clayey,Potash
+28,6.0,91,63,8,Pulses,Sandy,Urea
+39,7.1,47,9,66,Rice,Clayey,Complex NPK
+22,6.0,57,24,56,Rice,Sandy,SSP
+31,6.1,21,68,79,Cotton,Loam,Potash
+39,7.1,12,26,56,Rice,Loam,SSP
+37,6.9,17,52,56,Cotton,Sandy,Potash
+39,6.6,39,54,92,Rice,Clayey,Complex NPK
+30,6.9,31,85,98,Rice,Sandy,SSP
+23,6.3,29,78,37,Wheat,Clayey,Urea
+18,5.5,55,29,42,Cotton,Loam,Urea
+21,5.5,65,1,88,Pulses,Loam,Complex NPK
+32,6.5,37,78,5,Rice,Clayey,SSP
+22,5.7,0,0,14,Cotton,Sandy,Complex NPK
+35,5.6,23,15,56,Pulses,Clayey,Potash
+17,7.4,13,33,98,Rice,Sandy,Complex NPK
+31,7.2,8,32,11,Maize,Sandy,Urea
+39,5.8,84,69,16,Pulses,Loam,DAP
+33,5.5,53,30,31,Rice,Sandy,SSP
+28,7.4,82,47,76,Rice,Loam,DAP
+38,6.1,80,58,58,Pulses,Loam,Urea
+39,5.9,13,73,59,Cotton,Clayey,DAP
+19,6.9,8,7,64,Wheat,Loam,Potash
+19,5.7,6,30,61,Rice,Loam,DAP
+27,6.0,27,85,98,Cotton,Loam,Complex NPK
+32,7.5,37,30,64,Maize,Sandy,Urea
+38,6.8,35,41,57,Pulses,Clayey,SSP
+37,6.5,40,8,16,Cotton,Sandy,Urea
+35,6.3,26,65,4,Cotton,Loam,Complex NPK
+16,7.0,94,85,3,Cotton,Sandy,Urea
+20,5.8,76,8,5,Wheat,Loam,DAP
+38,7.4,57,49,94,Wheat,Clayey,DAP
+16,7.2,45,64,50,Maize,Loam,Potash
+34,6.7,80,91,42,Rice,Loam,Complex NPK
+36,5.6,58,50,84,Wheat,Loam,Complex NPK
+38,6.9,23,48,48,Wheat,Sandy,SSP
+34,7.3,72,89,45,Wheat,Loam,SSP
+37,6.5,80,29,15,Wheat,Loam,SSP
+37,6.2,18,71,92,Maize,Loam,Complex NPK
+22,5.7,74,26,91,Cotton,Loam,Potash
+24,7.0,15,95,55,Pulses,Loam,SSP
+32,7.3,88,14,59,Pulses,Loam,DAP
+24,5.7,64,19,55,Cotton,Sandy,SSP
+37,7.0,3,8,33,Rice,Clayey,SSP
+15,5.5,90,39,11,Maize,Clayey,Complex NPK
+34,7.4,20,29,91,Maize,Clayey,Urea
+39,6.7,47,23,34,Wheat,Clayey,Urea
+19,6.6,62,77,88,Cotton,Sandy,DAP
+32,6.1,97,40,13,Wheat,Loam,SSP
+35,7.4,24,1,7,Pulses,Loam,DAP
+36,6.0,82,89,24,Pulses,Sandy,DAP
+31,7.2,40,88,65,Cotton,Clayey,SSP
+18,7.5,9,30,99,Pulses,Sandy,DAP
+25,7.1,72,41,82,Maize,Sandy,DAP
+16,6.5,71,80,40,Wheat,Clayey,Potash
+35,5.6,92,62,55,Maize,Sandy,DAP
+19,6.4,41,75,65,Cotton,Loam,Urea
+19,6.4,19,71,27,Cotton,Sandy,Potash
+31,5.9,86,85,15,Pulses,Clayey,Complex NPK
+31,6.3,67,88,15,Rice,Clayey,SSP
+30,6.2,78,37,41,Rice,Clayey,Complex NPK
+25,5.8,66,43,77,Cotton,Sandy,SSP
+28,6.4,87,59,6,Maize,Clayey,Potash
+23,6.0,24,36,96,Wheat,Loam,Complex NPK
+26,6.5,84,32,92,Rice,Clayey,Urea
+35,5.6,35,73,56,Rice,Loam,DAP
+21,7.3,46,16,52,Maize,Sandy,SSP
+24,7.1,32,35,6,Cotton,Clayey,Complex NPK
+30,6.6,34,3,78,Pulses,Clayey,SSP
+18,7.2,42,39,31,Maize,Loam,DAP
+34,7.4,92,37,6,Cotton,Sandy,Potash
+27,5.7,37,3,33,Wheat,Loam,Potash
+33,6.8,82,40,58,Cotton,Sandy,Urea
+32,7.5,55,58,46,Pulses,Loam,Urea
+25,7.5,35,99,26,Cotton,Loam,Potash
+17,6.7,99,1,51,Cotton,Clayey,SSP
+16,5.8,65,3,32,Maize,Loam,SSP
+26,6.7,93,11,60,Pulses,Sandy,SSP
+18,5.5,20,3,46,Pulses,Loam,SSP
+27,5.9,99,59,95,Rice,Sandy,DAP
+19,7.4,46,12,7,Rice,Loam,Potash
+16,6.2,98,96,49,Wheat,Clayey,Complex NPK
+32,6.8,91,39,39,Wheat,Loam,Potash
+15,6.1,62,50,65,Pulses,Sandy,Urea
+22,7.4,62,0,5,Cotton,Sandy,SSP
+39,7.0,78,54,27,Rice,Clayey,Potash
+19,6.2,30,54,38,Wheat,Sandy,SSP
+18,7.1,91,87,45,Pulses,Clayey,SSP
+20,5.7,51,71,23,Cotton,Loam,DAP
+21,6.3,4,59,12,Maize,Sandy,DAP
+18,5.9,68,65,9,Cotton,Clayey,SSP
+17,6.9,6,98,29,Rice,Loam,Potash
+23,5.7,41,13,29,Cotton,Loam,Complex NPK
+16,6.3,3,56,13,Rice,Clayey,DAP
+19,6.1,39,30,87,Maize,Clayey,Complex NPK
+15,6.5,27,85,24,Cotton,Loam,Complex NPK
+39,6.2,13,81,9,Maize,Loam,SSP
+28,6.9,44,23,68,Rice,Clayey,DAP
+34,5.5,0,35,37,Rice,Clayey,SSP
+24,6.8,74,33,56,Rice,Loam,DAP
+36,6.0,93,6,75,Pulses,Loam,Urea
+20,6.0,78,24,86,Rice,Sandy,Potash
+16,7.1,0,34,60,Wheat,Sandy,Urea
+22,7.4,0,57,24,Cotton,Clayey,Potash
+23,6.1,96,73,52,Pulses,Clayey,Potash
+37,7.2,11,24,53,Maize,Loam,Potash
+35,5.7,29,93,98,Maize,Loam,DAP
+22,6.8,5,5,46,Wheat,Clayey,DAP
+18,7.0,69,48,33,Cotton,Clayey,Potash
+36,5.8,57,25,13,Wheat,Clayey,Urea
+27,6.4,30,68,97,Cotton,Clayey,Complex NPK
+18,7.3,18,38,71,Maize,Loam,Potash
+21,5.7,16,0,12,Wheat,Sandy,Complex NPK
+35,5.5,81,59,73,Maize,Sandy,Urea
+22,6.7,75,78,46,Cotton,Clayey,Complex NPK
+34,6.4,9,73,29,Wheat,Clayey,DAP
+15,7.1,9,50,12,Wheat,Sandy,Urea
+20,7.3,90,28,55,Pulses,Loam,DAP
+26,6.1,76,15,48,Pulses,Loam,Complex NPK
+24,6.3,64,66,35,Cotton,Clayey,SSP
+34,6.5,28,36,34,Cotton,Clayey,Urea
+22,6.7,77,7,58,Wheat,Sandy,SSP
+36,7.5,87,81,60,Pulses,Clayey,Potash
+20,6.9,58,31,1,Cotton,Sandy,SSP
+23,6.3,48,43,17,Wheat,Loam,DAP
+26,6.0,27,41,43,Cotton,Clayey,DAP
+29,7.4,25,79,55,Rice,Sandy,Complex NPK
+15,5.8,84,28,9,Pulses,Clayey,Complex NPK
+23,6.9,76,54,55,Cotton,Clayey,Potash
+34,7.4,24,52,16,Maize,Sandy,DAP
+21,6.8,5,42,67,Wheat,Clayey,Urea
+25,6.3,34,31,41,Wheat,Sandy,Potash
+34,5.9,76,86,86,Pulses,Clayey,SSP
+17,6.2,59,57,47,Pulses,Clayey,Urea
+38,6.9,43,23,84,Wheat,Clayey,Potash
+15,6.8,79,68,88,Cotton,Sandy,SSP
+34,7.4,59,64,97,Pulses,Clayey,Urea
+29,7.2,21,17,58,Pulses,Loam,Complex NPK
+15,7.1,12,70,84,Wheat,Sandy,DAP
+34,7.3,98,68,85,Wheat,Loam,SSP
+21,6.1,5,75,36,Cotton,Loam,DAP
+16,6.2,20,96,12,Wheat,Sandy,SSP
+27,6.3,31,80,26,Rice,Sandy,DAP
+33,6.6,98,2,2,Cotton,Loam,SSP
+28,6.8,23,74,22,Maize,Sandy,DAP
+24,6.1,19,39,46,Cotton,Loam,Complex NPK
+19,5.5,85,38,83,Rice,Clayey,DAP
+32,6.3,47,54,18,Maize,Sandy,SSP
+18,6.1,6,0,34,Cotton,Sandy,DAP
+17,7.4,68,9,95,Wheat,Loam,DAP
+35,7.3,73,75,67,Maize,Loam,Potash
+28,7.2,24,44,0,Pulses,Loam,SSP
+30,6.8,47,52,27,Wheat,Loam,DAP
+38,6.2,32,81,48,Cotton,Loam,SSP
+19,6.6,74,47,86,Wheat,Clayey,Potash
+24,7.1,90,69,3,Wheat,Sandy,SSP
+19,5.7,91,48,96,Wheat,Clayey,SSP
+32,7.1,16,38,11,Pulses,Clayey,SSP
+33,5.6,98,36,88,Wheat,Loam,Urea
+28,7.1,22,4,28,Pulses,Loam,DAP
+28,7.1,28,75,40,Cotton,Sandy,Urea
+38,5.6,28,39,73,Rice,Loam,DAP
+17,6.8,78,93,2,Pulses,Clayey,DAP
+18,6.5,89,62,78,Wheat,Sandy,Potash
+24,5.8,5,45,59,Pulses,Clayey,Urea
+38,5.8,66,75,10,Maize,Clayey,Urea
+37,7.0,35,42,4,Cotton,Clayey,Complex NPK
+37,6.6,75,32,73,Wheat,Clayey,Potash
+27,7.5,51,1,90,Maize,Clayey,DAP
+30,7.5,77,47,8,Maize,Clayey,DAP
+17,7.5,99,34,37,Pulses,Clayey,Complex NPK
+34,5.7,56,42,98,Maize,Clayey,DAP
+21,7.4,95,42,91,Wheat,Sandy,Urea
+29,6.0,94,74,58,Maize,Clayey,Complex NPK
+31,6.4,5,42,58,Maize,Loam,Complex NPK
+30,7.0,29,46,49,Pulses,Sandy,DAP
+23,5.9,91,79,19,Wheat,Loam,DAP
+15,6.6,53,90,35,Rice,Clayey,Complex NPK
+25,5.9,65,40,36,Cotton,Sandy,Urea
+26,5.7,61,80,74,Rice,Sandy,DAP
+28,5.7,26,43,49,Rice,Loam,DAP
+22,6.2,28,92,18,Wheat,Sandy,Complex NPK
+21,5.5,39,64,4,Wheat,Loam,Potash
+28,6.3,97,63,88,Maize,Sandy,Urea
+36,6.8,47,44,79,Cotton,Sandy,DAP
+30,6.3,32,2,49,Pulses,Clayey,DAP
+24,5.7,4,22,94,Wheat,Clayey,Potash
+21,5.6,54,24,13,Wheat,Clayey,DAP
+36,6.1,0,44,51,Maize,Clayey,SSP
+26,5.8,11,83,16,Cotton,Loam,Complex NPK
+33,7.4,51,94,55,Pulses,Sandy,DAP
+22,5.8,99,77,75,Cotton,Sandy,SSP
+16,7.1,68,7,61,Cotton,Clayey,DAP
+24,6.7,26,83,98,Maize,Sandy,Complex NPK
+17,6.6,15,99,17,Rice,Clayey,SSP
+33,6.5,92,53,70,Wheat,Clayey,SSP
+29,7.4,16,62,24,Rice,Sandy,Complex NPK
+20,6.2,70,29,93,Rice,Clayey,Potash
+37,7.1,95,84,93,Rice,Loam,Potash
+19,6.6,2,8,66,Maize,Clayey,Complex NPK
+33,6.3,17,74,75,Pulses,Clayey,DAP
+29,7.4,65,41,46,Cotton,Loam,Urea
+33,6.7,32,34,40,Rice,Clayey,DAP
+16,5.7,97,46,81,Pulses,Clayey,SSP
+27,6.3,38,61,39,Maize,Clayey,Urea
+15,7.1,68,75,9,Pulses,Loam,SSP
+24,6.9,94,72,26,Maize,Clayey,SSP
+31,7.3,4,55,20,Cotton,Clayey,Complex NPK
+17,6.0,79,85,57,Wheat,Sandy,Potash
+23,7.0,21,68,68,Wheat,Loam,Potash
+34,6.4,10,47,66,Cotton,Loam,Potash
+25,6.6,16,7,52,Maize,Loam,Potash
+31,7.4,2,56,39,Wheat,Clayey,Urea
+39,7.5,46,85,83,Rice,Loam,Potash
+39,7.2,61,86,63,Maize,Loam,Complex NPK
+16,6.2,46,70,7,Wheat,Clayey,DAP
+15,7.3,32,19,31,Wheat,Sandy,SSP
+20,6.8,23,43,96,Rice,Loam,DAP
+39,6.4,61,70,68,Cotton,Loam,Urea
+17,5.6,1,96,27,Wheat,Loam,Complex NPK
+30,7.0,36,86,24,Rice,Loam,SSP
+18,6.5,89,21,55,Pulses,Clayey,Urea
+29,7.1,8,11,8,Cotton,Loam,Complex NPK
+20,7.0,47,43,44,Maize,Clayey,SSP
+26,7.1,91,67,53,Cotton,Clayey,Potash
+34,6.1,0,96,90,Wheat,Sandy,SSP
+39,7.1,35,29,38,Wheat,Loam,Urea
+21,6.6,26,21,27,Rice,Loam,Urea
+35,6.4,62,81,98,Wheat,Loam,SSP
+21,6.9,52,69,43,Cotton,Sandy,Complex NPK
+34,5.5,22,91,76,Rice,Loam,Complex NPK
+21,5.7,31,1,8,Pulses,Clayey,Potash
+17,6.1,1,33,40,Pulses,Loam,Urea
+21,7.5,93,40,32,Pulses,Sandy,Potash
+20,5.8,3,43,64,Rice,Loam,Potash
+20,6.2,3,51,81,Cotton,Sandy,Complex NPK
+28,5.6,98,94,76,Rice,Loam,Potash
+24,6.2,36,82,16,Maize,Sandy,DAP
+19,6.1,42,54,75,Rice,Loam,Potash
+37,7.4,20,79,79,Wheat,Loam,Potash
+28,7.2,5,51,92,Pulses,Sandy,Urea
+36,6.3,88,45,51,Rice,Loam,SSP
+32,5.5,83,93,64,Maize,Sandy,Potash
+18,7.2,54,4,92,Wheat,Loam,Potash
+28,6.8,3,56,36,Cotton,Clayey,SSP
+34,5.8,83,48,60,Rice,Sandy,Urea
+23,7.5,23,20,18,Pulses,Sandy,Urea
+36,5.7,48,16,81,Wheat,Loam,DAP
+28,7.2,94,53,25,Rice,Clayey,Complex NPK
+20,6.1,30,85,40,Wheat,Sandy,Urea
+37,6.4,89,66,25,Wheat,Clayey,Urea
+31,7.1,7,20,4,Wheat,Sandy,DAP
+29,6.9,42,56,10,Maize,Loam,SSP
+38,7.4,12,24,97,Rice,Clayey,Urea
+20,6.7,4,43,86,Wheat,Clayey,Urea
+16,5.7,27,84,97,Rice,Sandy,Potash
+20,7.3,76,63,82,Wheat,Clayey,Complex NPK
+21,7.0,74,15,35,Pulses,Loam,SSP
+27,6.9,43,97,84,Rice,Clayey,Potash
+25,5.6,53,24,5,Rice,Clayey,Complex NPK
+37,6.3,10,88,58,Pulses,Loam,SSP
+29,5.8,43,91,99,Rice,Clayey,Complex NPK
+23,7.1,6,61,47,Wheat,Clayey,SSP
+22,6.9,71,3,77,Maize,Loam,Urea
+28,7.3,0,19,30,Rice,Loam,SSP
+20,7.4,51,12,11,Pulses,Clayey,DAP
+30,7.0,34,44,8,Maize,Loam,Potash
+25,7.5,96,74,26,Rice,Clayey,DAP
+18,6.7,23,9,95,Wheat,Sandy,Complex NPK
+25,5.6,64,63,90,Cotton,Sandy,Complex NPK
+33,5.5,71,92,50,Cotton,Clayey,DAP
+18,6.2,30,46,19,Maize,Clayey,SSP
+29,7.1,18,95,55,Pulses,Clayey,Potash
+33,7.2,32,87,31,Rice,Loam,Urea
+20,7.4,2,13,70,Cotton,Clayey,Potash
+19,5.6,38,69,51,Cotton,Loam,Potash
+32,5.6,12,45,37,Rice,Loam,SSP
+20,7.3,64,7,11,Rice,Clayey,Complex NPK
+39,6.1,72,41,79,Pulses,Sandy,SSP
+18,6.6,3,16,44,Rice,Clayey,SSP
+20,7.5,13,50,53,Cotton,Sandy,Urea
+23,6.3,90,39,4,Rice,Loam,Complex NPK
+19,6.8,3,35,99,Wheat,Sandy,Complex NPK
+32,6.3,70,28,17,Cotton,Clayey,Urea
+38,7.0,6,81,25,Maize,Sandy,Potash
+39,6.6,20,37,54,Pulses,Sandy,Complex NPK
+16,6.0,58,1,76,Cotton,Clayey,DAP
+33,6.0,2,81,0,Rice,Sandy,DAP
+16,6.0,85,30,96,Pulses,Clayey,DAP
+29,6.6,47,34,70,Pulses,Clayey,Potash
+32,6.9,52,3,99,Maize,Sandy,DAP
+22,7.4,58,33,41,Wheat,Sandy,Urea
+36,6.9,82,43,83,Wheat,Sandy,Complex NPK
+26,7.1,80,89,99,Rice,Sandy,Urea
+29,5.8,57,1,93,Wheat,Sandy,Complex NPK
+31,6.2,43,98,87,Pulses,Clayey,Urea
+35,6.3,33,56,25,Rice,Sandy,Urea
+16,6.9,69,49,84,Wheat,Clayey,SSP
+32,6.1,93,40,44,Rice,Sandy,Potash
+27,6.1,79,82,72,Pulses,Sandy,Urea
+37,6.2,89,41,38,Pulses,Sandy,Potash
+29,7.1,24,54,86,Cotton,Sandy,Potash
+37,6.7,60,85,50,Wheat,Loam,SSP
+15,5.7,64,47,15,Wheat,Loam,Urea
+17,5.7,61,92,4,Maize,Sandy,Urea
+34,6.2,77,65,75,Wheat,Loam,DAP
+38,7.0,12,41,26,Rice,Loam,Potash
+29,6.9,70,38,75,Rice,Clayey,SSP
+33,6.9,49,12,26,Pulses,Loam,Potash
+26,7.0,3,79,76,Rice,Clayey,Urea
+35,6.1,32,28,28,Maize,Sandy,DAP
+24,6.6,49,25,0,Pulses,Sandy,Urea
+29,6.6,99,53,69,Pulses,Sandy,Complex NPK
+15,7.0,13,86,57,Pulses,Loam,DAP
+27,7.4,75,63,13,Wheat,Sandy,SSP
+37,6.1,17,91,22,Rice,Clayey,SSP
+24,7.1,68,77,88,Wheat,Loam,Potash
+33,6.8,87,33,61,Cotton,Loam,Potash
+19,6.7,47,78,90,Pulses,Clayey,DAP
+22,7.0,74,8,62,Cotton,Loam,Urea
+18,7.4,38,68,5,Wheat,Loam,DAP
+31,5.6,48,46,82,Rice,Clayey,Complex NPK
+27,5.8,36,85,44,Pulses,Sandy,DAP
+20,7.0,93,45,92,Cotton,Loam,DAP
+35,5.7,25,92,67,Cotton,Clayey,Complex NPK
+28,6.5,35,22,23,Pulses,Loam,Urea
+31,5.9,71,14,9,Maize,Clayey,Complex NPK
+28,6.0,64,0,51,Pulses,Loam,DAP
+33,6.9,64,50,5,Cotton,Sandy,Potash
+34,5.6,8,54,90,Wheat,Clayey,SSP
+32,7.2,67,50,33,Wheat,Sandy,Urea
+22,6.4,6,9,1,Cotton,Clayey,Urea
+32,6.5,7,33,63,Wheat,Loam,Complex NPK
+29,6.6,51,40,96,Wheat,Loam,Potash
+18,6.8,77,40,84,Maize,Loam,DAP
+25,6.2,82,7,61,Cotton,Loam,Potash
+35,5.7,17,26,91,Rice,Clayey,Complex NPK
+25,6.1,3,29,76,Maize,Clayey,Urea
+16,5.8,8,50,31,Cotton,Loam,DAP
+38,6.6,47,57,91,Wheat,Sandy,Complex NPK
+35,6.1,43,17,58,Wheat,Loam,SSP
+31,7.4,61,10,3,Rice,Sandy,SSP
+25,7.4,3,43,84,Wheat,Clayey,SSP
+33,6.7,44,62,10,Rice,Clayey,Urea
+38,6.7,75,97,51,Wheat,Loam,Urea
+35,7.5,49,65,73,Pulses,Loam,Potash
+31,7.3,50,19,69,Pulses,Loam,Potash
+17,7.0,10,93,13,Wheat,Clayey,SSP
+21,6.1,43,6,60,Rice,Loam,Complex NPK
+24,6.2,79,5,81,Rice,Loam,SSP
+17,5.9,91,68,58,Maize,Sandy,DAP
+35,6.5,62,66,45,Pulses,Clayey,DAP
+27,7.5,99,40,25,Maize,Loam,SSP
+24,7.3,82,80,3,Rice,Sandy,Complex NPK
+36,5.7,62,71,64,Wheat,Sandy,Potash
+19,5.6,35,40,78,Pulses,Loam,SSP
+19,7.3,85,24,14,Cotton,Clayey,Complex NPK
+24,6.6,28,87,87,Wheat,Sandy,Complex NPK
+25,5.9,59,52,70,Rice,Clayey,DAP
+27,6.8,97,22,15,Pulses,Sandy,Potash
+23,6.8,89,41,5,Rice,Sandy,Complex NPK
+16,5.7,74,6,54,Rice,Clayey,SSP
+20,6.0,1,78,0,Cotton,Sandy,Complex NPK
+22,5.6,21,51,71,Rice,Loam,SSP
+15,5.9,25,39,61,Rice,Loam,Complex NPK
+16,5.8,10,24,81,Rice,Sandy,DAP
+18,5.9,41,31,32,Cotton,Loam,Potash
+33,6.9,13,20,58,Maize,Clayey,Complex NPK
+39,5.6,51,18,29,Rice,Clayey,Complex NPK
+33,5.7,66,35,31,Rice,Loam,DAP
+35,5.8,82,96,79,Wheat,Loam,Complex NPK
+23,6.1,84,84,75,Pulses,Loam,Urea
+33,6.1,7,88,31,Pulses,Clayey,Urea
+39,6.0,40,96,18,Pulses,Sandy,SSP
+22,7.0,56,91,86,Pulses,Loam,Complex NPK
+25,7.5,85,44,71,Pulses,Loam,SSP
+39,6.6,37,82,99,Wheat,Clayey,Complex NPK
+33,7.4,46,22,62,Cotton,Sandy,DAP
+18,6.3,83,98,19,Pulses,Clayey,Potash
+27,5.7,90,31,69,Wheat,Loam,Potash
+34,6.3,55,50,49,Wheat,Clayey,SSP
+28,6.1,6,18,64,Rice,Sandy,Urea
+37,6.5,0,78,1,Pulses,Clayey,Complex NPK
+15,6.8,8,7,50,Wheat,Clayey,Potash
+25,6.4,85,11,53,Wheat,Sandy,SSP
+18,7.4,37,63,60,Wheat,Loam,Complex NPK
+21,7.3,67,74,58,Wheat,Clayey,DAP
+18,6.9,46,57,78,Maize,Clayey,SSP
+21,6.5,41,58,57,Wheat,Sandy,Urea
+34,5.8,92,38,18,Cotton,Loam,Complex NPK
+17,6.3,63,41,41,Cotton,Sandy,Complex NPK
+33,6.9,57,86,6,Pulses,Loam,Potash
+33,6.1,39,64,43,Pulses,Loam,Potash
+21,5.7,65,34,32,Pulses,Clayey,SSP
+35,7.3,51,81,75,Wheat,Loam,Urea
+26,6.9,61,42,87,Pulses,Loam,Potash
+37,6.7,69,52,24,Pulses,Clayey,Complex NPK
+15,7.1,58,70,50,Cotton,Clayey,SSP
+19,7.2,91,3,8,Pulses,Loam,SSP
+28,6.5,95,40,83,Rice,Loam,Urea
+24,7.3,40,91,2,Wheat,Loam,Potash
+17,7.3,73,76,28,Wheat,Sandy,Potash
+16,6.0,53,39,38,Wheat,Clayey,Urea
+27,6.7,7,85,46,Rice,Loam,Complex NPK
+30,6.6,99,25,43,Maize,Loam,SSP
+37,6.6,47,0,97,Maize,Clayey,Urea
+16,7.4,69,34,13,Cotton,Loam,DAP
+38,6.1,41,65,45,Maize,Loam,Urea
+27,7.5,28,43,33,Rice,Loam,SSP
+20,7.3,85,37,10,Cotton,Loam,Complex NPK
+21,6.4,11,89,87,Wheat,Sandy,DAP
+16,7.1,3,87,77,Pulses,Loam,DAP
+25,7.0,18,42,30,Wheat,Loam,DAP
+21,6.9,35,68,64,Pulses,Clayey,SSP
+21,6.1,46,52,71,Pulses,Sandy,Urea
+21,5.9,17,71,67,Wheat,Clayey,Potash
+21,6.8,27,93,0,Rice,Loam,SSP
+26,7.2,54,1,95,Wheat,Clayey,SSP
+33,5.5,73,23,8,Rice,Sandy,SSP
+36,6.8,19,87,67,Maize,Loam,Potash
+33,6.4,71,88,11,Maize,Loam,SSP
+33,7.3,71,89,23,Wheat,Loam,Potash
+34,6.1,43,69,20,Rice,Loam,DAP
+17,6.4,44,22,1,Wheat,Sandy,Urea
+27,6.5,46,80,70,Rice,Loam,SSP
+24,5.8,34,95,68,Rice,Clayey,Potash
+34,6.9,33,64,42,Wheat,Loam,DAP
+23,7.2,74,67,99,Rice,Clayey,Complex NPK
+20,5.6,69,97,22,Rice,Loam,Urea
+35,6.1,92,31,30,Cotton,Loam,Complex NPK
+36,5.6,46,70,38,Cotton,Sandy,Urea
+26,7.4,32,52,75,Pulses,Sandy,SSP
+16,6.8,83,64,52,Rice,Sandy,Potash
+26,7.4,39,8,98,Pulses,Clayey,Urea
+30,6.6,30,24,67,Maize,Clayey,SSP
+27,7.1,95,70,64,Rice,Clayey,DAP
+30,6.2,47,75,6,Maize,Loam,SSP
+27,6.2,1,68,33,Cotton,Loam,Complex NPK
+36,6.3,32,62,29,Maize,Loam,Urea
+39,6.8,63,71,85,Maize,Loam,Potash
+33,6.2,45,25,14,Wheat,Sandy,Complex NPK
+28,7.3,55,51,52,Rice,Loam,DAP
+27,7.5,64,42,86,Rice,Clayey,SSP
+24,5.6,85,5,91,Pulses,Clayey,Urea
+36,5.9,22,37,67,Maize,Loam,DAP
+21,5.7,27,4,94,Cotton,Sandy,Potash
+19,5.6,5,62,46,Cotton,Sandy,Complex NPK
+31,6.0,35,42,87,Maize,Sandy,Urea
+23,6.4,35,12,24,Wheat,Sandy,DAP
+20,7.2,67,16,13,Maize,Loam,Potash
+30,5.9,28,57,32,Maize,Sandy,SSP
+20,6.5,91,69,32,Cotton,Sandy,Potash
+20,7.4,9,13,25,Maize,Loam,Complex NPK
+32,6.8,43,11,73,Pulses,Clayey,DAP
+15,7.1,3,86,17,Cotton,Loam,Potash
+31,6.6,11,39,23,Cotton,Clayey,Urea
+31,7.5,51,0,35,Wheat,Loam,Complex NPK
+15,6.7,86,24,35,Maize,Sandy,Urea
+25,5.6,4,27,34,Cotton,Sandy,Potash
+27,5.9,29,30,84,Maize,Sandy,Potash
+15,6.3,60,88,69,Rice,Clayey,Complex NPK
+22,6.7,44,92,20,Wheat,Clayey,Complex NPK
+37,7.0,2,24,6,Cotton,Loam,SSP
+34,6.3,94,94,8,Pulses,Clayey,Potash
+20,6.9,69,52,0,Wheat,Loam,Potash
+19,7.1,47,32,61,Maize,Loam,Urea
+34,6.1,76,62,89,Wheat,Clayey,SSP
+19,7.5,17,61,71,Rice,Loam,Urea
+20,6.8,79,99,73,Wheat,Sandy,Potash
+27,7.3,56,86,6,Cotton,Clayey,Urea
+32,6.6,41,47,93,Rice,Sandy,DAP
+34,7.0,24,8,69,Maize,Loam,Complex NPK
+27,7.0,85,3,36,Rice,Clayey,Urea
+21,7.3,3,52,29,Pulses,Sandy,Urea
+22,5.8,60,78,19,Wheat,Loam,Potash
+35,6.6,46,60,47,Maize,Clayey,SSP
+31,6.4,31,59,22,Cotton,Clayey,Urea
+15,7.3,70,81,67,Pulses,Sandy,DAP
+38,5.7,51,59,7,Wheat,Sandy,Potash
+30,7.5,97,83,56,Cotton,Loam,SSP
+25,7.3,47,88,93,Pulses,Loam,Urea
+18,5.6,11,88,84,Wheat,Clayey,Complex NPK
+18,6.5,62,99,72,Cotton,Clayey,Complex NPK
+31,6.9,8,65,18,Maize,Loam,Complex NPK
+31,7.0,62,76,22,Wheat,Sandy,Potash
+24,7.3,3,84,22,Cotton,Sandy,Complex NPK
+35,7.1,55,7,85,Pulses,Clayey,SSP
+35,6.1,54,86,46,Maize,Clayey,Potash
+20,6.5,41,44,39,Pulses,Sandy,DAP
+39,6.9,54,79,56,Maize,Loam,DAP
+39,5.8,25,32,34,Cotton,Clayey,Complex NPK
+31,5.9,6,33,60,Wheat,Clayey,Potash
+32,6.5,71,77,98,Cotton,Clayey,Complex NPK
+36,6.1,63,1,80,Pulses,Clayey,Complex NPK
+24,7.2,93,3,13,Rice,Clayey,DAP
+27,6.7,69,39,28,Cotton,Clayey,DAP
+30,6.2,38,62,59,Maize,Sandy,Potash
+21,7.2,67,62,13,Pulses,Sandy,Complex NPK
+29,7.1,7,27,33,Cotton,Loam,Potash
+16,7.5,43,58,26,Pulses,Sandy,SSP
+19,7.2,23,98,77,Maize,Sandy,SSP
+31,6.3,88,47,57,Maize,Loam,Urea
+19,5.8,29,25,74,Maize,Clayey,DAP
+22,7.2,51,80,87,Wheat,Sandy,Potash
+38,5.6,17,73,85,Cotton,Sandy,Complex NPK
+29,6.2,56,25,91,Wheat,Loam,Urea
+22,7.3,43,64,55,Maize,Loam,SSP
+37,7.4,33,15,85,Rice,Sandy,Complex NPK
+17,6.8,48,80,95,Cotton,Clayey,Urea
+37,6.9,78,7,82,Cotton,Clayey,Urea
+31,5.6,42,23,91,Pulses,Loam,SSP
+30,6.5,80,40,90,Wheat,Loam,Complex NPK
+30,6.6,1,38,23,Rice,Clayey,Complex NPK
+33,6.2,53,37,71,Wheat,Sandy,Urea
+26,5.6,64,68,13,Wheat,Sandy,DAP
+38,6.0,56,98,20,Maize,Loam,DAP
+29,6.2,15,86,94,Cotton,Sandy,DAP
+22,6.4,80,60,35,Wheat,Clayey,Urea
+17,6.7,72,49,74,Rice,Sandy,DAP
+37,6.9,20,30,35,Cotton,Loam,SSP
+32,6.1,61,97,69,Cotton,Loam,Urea
+18,6.2,63,91,37,Wheat,Loam,DAP
+22,5.5,54,71,22,Wheat,Sandy,Potash
+28,5.6,43,77,33,Rice,Clayey,Complex NPK
+31,6.0,25,89,18,Rice,Sandy,Urea
+20,7.0,0,37,0,Cotton,Sandy,Complex NPK
+19,6.8,49,31,31,Pulses,Loam,Complex NPK
+36,7.0,39,49,30,Cotton,Sandy,DAP
+28,7.0,2,47,45,Pulses,Sandy,Potash
+20,7.2,70,53,2,Rice,Loam,DAP
+34,6.9,3,8,21,Maize,Loam,Potash
+26,7.5,30,18,18,Wheat,Clayey,Potash
+23,7.3,13,84,80,Wheat,Sandy,Complex NPK
+15,6.7,20,25,99,Wheat,Clayey,Complex NPK
+32,6.7,75,39,12,Pulses,Loam,Potash
+20,5.6,11,93,72,Pulses,Sandy,Potash
+19,7.5,5,2,90,Cotton,Clayey,Potash
+16,5.8,16,50,60,Rice,Sandy,Complex NPK
+20,7.0,77,81,99,Maize,Sandy,SSP
+31,7.1,62,97,9,Pulses,Loam,SSP
+21,6.2,8,3,31,Cotton,Sandy,Urea
+39,5.9,27,26,49,Cotton,Clayey,SSP
+23,5.7,6,53,63,Rice,Loam,DAP
+37,7.0,42,88,47,Cotton,Sandy,Complex NPK
+34,6.4,4,63,0,Maize,Clayey,SSP
+19,6.9,15,94,45,Rice,Sandy,Potash
+35,7.3,60,57,54,Wheat,Sandy,Potash
+25,5.8,0,65,84,Maize,Clayey,DAP
+25,7.3,39,82,92,Wheat,Clayey,Urea
+18,6.3,37,71,38,Maize,Loam,Potash
+37,6.1,6,43,36,Wheat,Loam,SSP
+20,7.4,93,69,30,Cotton,Sandy,Potash
+24,7.5,58,58,33,Pulses,Loam,Urea
+23,5.9,25,40,99,Pulses,Sandy,DAP
+32,6.8,76,19,26,Maize,Loam,Urea
+34,5.7,64,34,46,Wheat,Sandy,Urea
+23,6.8,62,85,18,Maize,Loam,Complex NPK
+25,7.2,52,88,88,Cotton,Loam,Potash
+16,6.9,50,94,88,Pulses,Sandy,Potash
+29,6.3,49,65,78,Wheat,Clayey,SSP
+20,6.3,28,0,92,Wheat,Loam,Urea
+39,6.3,71,88,41,Cotton,Sandy,DAP
+31,6.7,65,47,19,Pulses,Sandy,Potash
+18,7.3,50,4,2,Wheat,Sandy,Potash
+22,7.4,7,64,42,Pulses,Clayey,DAP
+16,5.6,26,36,49,Rice,Clayey,Complex NPK
+38,5.9,40,60,29,Maize,Loam,SSP
+23,5.7,61,50,65,Cotton,Sandy,Potash
+15,5.9,48,55,21,Wheat,Clayey,Potash
+38,6.2,22,84,81,Rice,Clayey,SSP
+20,6.5,14,68,89,Wheat,Clayey,SSP
+30,6.8,63,5,78,Rice,Clayey,Potash
+21,7.0,95,61,86,Rice,Sandy,SSP
+39,7.3,85,78,79,Pulses,Loam,SSP
+38,7.5,52,22,82,Cotton,Clayey,DAP
+30,6.8,7,79,11,Wheat,Loam,SSP
+20,7.2,36,83,54,Maize,Clayey,DAP
+24,7.1,80,76,24,Cotton,Clayey,Urea
+32,6.1,70,61,69,Maize,Loam,SSP
+31,7.3,20,39,6,Wheat,Loam,DAP
+31,5.6,38,32,61,Wheat,Sandy,Urea
